@@ -6,7 +6,7 @@ const randomRestaurant =(myArray, event) => {
     const randomElement = myArray[Math.floor(Math.random() *myArray.length)]
     console.log(randomElement)
     alert(`You should go to ${randomElement}`)
-    event.preventDefault()
+    event.preventDefault();
 }
 
-submit.addEventListener('submit', randomRestaurant(myArray, event))
+submit.addEventListener('submit', randomRestaurant(myArray))
